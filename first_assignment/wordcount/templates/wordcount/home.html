@@ -1,0 +1,35 @@
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+<body>
+    <div class="container">
+
+<h1>Word Count</h1>
+<ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="{% url 'about' %}">ABOUT</a></li>
+      </ul>
+<a href="{% url 'about' %}"></a>
+<br>
+글자를 입력해 주세요.(띄어쓰기를 인식합니다)
+<form action="{% url 'result' %}">
+        <br>
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    
+    <br>
+    <button type="sbumit" class="btn btn-default">전송!</button>
+
+</form>
+</div>
+</body>
